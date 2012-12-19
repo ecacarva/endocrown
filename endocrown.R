@@ -2,6 +2,8 @@
 # endocrown.R
 ###################
 
+data <- read.csv("C:/Users/Master/Google Drive/GitHub/endocrown/endocrown.csv") 
+
 #tabela 1 do artigo ou paragrafo com descricao da amostra
 
 # tabela 2 com anova comparando os 4 grupos. se nao for estatisticamente significativo para ai
