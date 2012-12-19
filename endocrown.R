@@ -42,5 +42,5 @@ summary(data.aov1)
 TukeyHSD(data.aov1~GR) 
 
 # cria um boxplot comparando os 4 grupos
-boxplot(FM ~ GR,main = "Distribuições  da resistência média", 
+boxplot(FM ~ GR,main = "Distributions of mean resistence", 
         xlab = "Groups",ylab = "Resistence (Newtons)")
