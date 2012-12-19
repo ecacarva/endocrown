@@ -9,10 +9,10 @@
 # Data Dictionary
 # CP = Corpo de Prova
 # GR = Grupo
-#      Grupo I: Cimentados com cimento resinoso Dual; 
-#      Grupo II: Cimentados com cimento resinoso de polimeriza��o qu�mica; 
-#      Grupo III: Cimentados com fosfato de zinco; 
-#      Grupo IV: Cimentados com ion�mero de vidro convencional.
+#      CRD: Cimentados com cimento resinoso Dual; 
+#      CRP: Cimentados com cimento resinoso de polimeriza��o qu�mica; 
+#      CFZ: Cimentados com fosfato de zinco; 
+#      CIV: Cimentados com ion�mero de vidro convencional.
 # FM = For�a M�xima
 
 #tabela 1 do artigo ou paragrafo com descricao da amostra
@@ -25,8 +25,8 @@ database <- structure(list(FM = c(462.14,  674.48,  621.5,  482.82,  442.69,    
                                   324.83, 432.06, 385.27,	302.79,	349.11,	248.29,	258.28,	314.84,	292.23,	322.27),
                            GR = c("CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD",
                                   "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP",  
-                                  "FZI", "FZI", "FZI", "FZI", "FZI", "FZI", "FZI", "FZI", "FZI", "FZI", 
-                                  "IVC", "IVC", "IVC", "IVC", "IVC", "IVC", "IVC", "IVC", "IVC", "IVC")),
+                                  "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", 
+                                  "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV")),
                       .Names = c("FM","GR"), row.names = c(NA, -40L), class = "data.frame", reference = "A1.4, p. 270")
 database
 attach(database)
