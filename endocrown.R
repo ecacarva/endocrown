@@ -34,12 +34,13 @@ database
 attach(database)
 
 # tabela 2 com anova comparando os 4 grupos. se nao for estatisticamente significativo para ai
-data.aov1=aov(FM ~ GR)
+data.aov1 <- aov(FM ~ GR)
 data.aov1
 summary(data.aov1)
 
 # se for significativo, 
-TukeyHSD(data.aov1) 
+TukeyHSD(data.aov1~GR) 
 
 # cria um boxplot comparando os 4 grupos
-boxplot(FM ~ GR)
+boxplot(FM ~ GR,main = "Distribuições  da resistência média", 
+        xlab = "Groups",ylab = "Resistence (Newtons)")
