@@ -17,6 +17,8 @@
 
 #tabela 1 do artigo ou paragrafo com descricao da amostra
 
+# Clean environment
+rm(list=ls())
 
 # Loading Database
 database <- structure(list(FM = c(462.14,  674.48,  621.5,  482.82,  442.69,                                 446.33,	470.64,	636.26,	645.99,	532.6,
@@ -31,17 +33,13 @@ database <- structure(list(FM = c(462.14,  674.48,  621.5,  482.82,  442.69,    
 database
 attach(database)
 
-
 # tabela 2 com anova comparando os 4 grupos. se nao for estatisticamente significativo para ai
-boxplot(FM ~ GR)
-
 data.aov1=aov(FM ~ GR)
 data.aov1
 summary(data.aov1)
 
-
-
 # se for significativo, 
-#compara grupos dois a dois com t-test e coloca no artigo
+TukeyHSD(data.aov1) 
 
 # cria um boxplot comparando os 4 grupos
+boxplot(FM ~ GR)
