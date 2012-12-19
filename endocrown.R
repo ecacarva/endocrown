@@ -10,10 +10,10 @@
 # CP = Corpo de Prova
 # GR = Grupo
 #      CRD: Cimentados com cimento resinoso Dual; 
-#      CRP: Cimentados com cimento resinoso de polimeriza��o qu�mica; 
+#      CRP: Cimentados com cimento resinoso de polimerizacao quimica; 
 #      CFZ: Cimentados com fosfato de zinco; 
-#      CIV: Cimentados com ion�mero de vidro convencional.
-# FM = For�a M�xima
+#      CIV: Cimentados com ionomero de vidro convencional.
+# FM = Forca Maxima
 
 #tabela 1 do artigo ou paragrafo com descricao da amostra
 
