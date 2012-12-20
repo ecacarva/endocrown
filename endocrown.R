@@ -39,7 +39,49 @@ data.aov1
 summary(data.aov1)
 
 # se for significativo, 
-TukeyHSD(data.aov1~GR) 
+require(graphics)
+a=1:10
+a
+b=c(7:20)
+b
+t.test(a,b)      # P = .00001855
+b=c(7:20,200)
+b
+t.test(a,b) # P = .1245    -- NOT significant anymore
+
+gr1<-FM[1:10]
+gr2<-FM[11:20]
+gr3<-FM[21:30]
+gr4<-FM[31:40]
+
+t.test(gr1,gr2,paired = FALSE, conf.level = 0.95 )
+t.test(gr1,gr3,paired = FALSE, conf.level = 0.95 )
+t.test(gr1,gr4,paired = FALSE, conf.level = 0.95 )
+
+t.test(gr2,gr1,paired = FALSE, conf.level = 0.95 )
+t.test(gr2,gr3,paired = FALSE, conf.level = 0.95 )
+t.test(gr2,gr4,paired = FALSE, conf.level = 0.95 )
+
+t.test(gr3,gr1,paired = FALSE, conf.level = 0.95 )
+t.test(gr3,gr2,paired = FALSE, conf.level = 0.95 )
+t.test(gr3,gr4,paired = FALSE, conf.level = 0.95 )
+
+t.test(gr4,gr1,paired = FALSE, conf.level = 0.95 )
+t.test(gr4,gr2,paired = FALSE, conf.level = 0.95 )
+t.test(gr4,gr3,paired = FALSE, conf.level = 0.95 )
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # cria um boxplot comparando os 4 grupos
 boxplot(FM ~ GR,main = "Distributions of mean resistence", 
