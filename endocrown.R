@@ -19,19 +19,11 @@
 
 # Clean environment
 rm(list=ls())
+detach()
 
 # Loading Database
-database <- structure(list(FM = c(462.14,  674.48,  621.5,  482.82,  442.69,                                 446.33,	470.64,	636.26,	645.99,	532.6,
-                                  588.39,	216.3,	868.92,	254.7,	329.48,	489.48,	569.48,	387.44,	805.34,	306.82,
-                                  280.35,	548.16,	253.62,	339.64,	125.46,	441.57,	428.71,	412.54,	384.55,	531.23, 
-                                  324.83, 432.06, 385.27,	302.79,	349.11,	248.29,	258.28,	314.84,	292.23,	322.27),
-                           GR = c("CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD",
-                                  "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP",  
-                                  "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", 
-                                  "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV")),
-                      .Names = c("FM","GR"), row.names = c(NA, -40L), class = "data.frame", reference = "A1.4, p. 270")
-database
-attach(database)
+endocrown <- structure(list(FM = c(462.14,  674.48,  621.5,  482.82,  442.69,                                 446.33,	470.64,	636.26,	645.99,	532.6, 588.39,	216.3,	868.92,	254.7,	329.48,	489.48,	569.48,	387.44,	805.34,	306.82, 280.35,	548.16,	253.62,	339.64,	125.46,	441.57,	428.71,	412.54,	384.55,	531.23, 324.83, 432.06, 385.27,	302.79,	349.11,	248.29,	258.28,	314.84,	292.23,	322.27), GR = c("CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRD", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CRP", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ", "CFZ","CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV", "CIV")), .Names = c("FM","GR"), row.names = c(NA, -40L), class = "data.frame", reference = "A1.4, p. 270")
+endocrown
 
 # tabela 2 com anova comparando os 4 grupos. se nao for estatisticamente significativo para ai
 data.aov1 <- aov(FM ~ GR)
