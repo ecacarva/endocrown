@@ -11,7 +11,6 @@
 
 # Clean environment
 rm(list=ls())
-detach()
 
 # Loading Database
 endocrown <- structure(list(MF = c(462.14, 674.48, 621.50, 482.82, 442.69, 446.33, 470.64, 636.26, 645.99, 532.60,
